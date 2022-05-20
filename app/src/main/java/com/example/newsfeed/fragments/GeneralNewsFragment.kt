@@ -5,14 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.newsfeed.databinding.FragmentGeneralNewsBinding
+import com.example.newsfeed.databinding.FragmentNewsBinding
 
 class GeneralNewsFragment: Fragment() {
 
-    private lateinit var binding: FragmentGeneralNewsBinding
+    private lateinit var binding: FragmentNewsBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentGeneralNewsBinding.inflate(inflater,container,false)
+        binding = FragmentNewsBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

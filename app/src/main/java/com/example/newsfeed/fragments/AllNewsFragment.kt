@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.newsfeed.databinding.FragmentNewsBinding
 
+//TODO Вынести в BaseFragment дублирующийся код в фрагментах новостей
 class AllNewsFragment: Fragment(){
 
     private lateinit var binding: FragmentNewsBinding

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">News Feed</string>
+
+    //Tab layout title name
+    <string name="tab_layout_title_name_all_news">ALL NEWS</string>
+    <string name="tab_layout_title_name_business_news">BUSINESS NEWS</string>
+    <string name="tab_layout_title_name_entertainment_news">ENTERTAINMENT NEWS</string>
+    <string name="tab_layout_title_name_general_news">GENERAL NEWS</string>
+    <string name="tab_layout_title_name_health_news">HEALTH NEWS</string>
+    <string name="tab_layout_title_name_science_news">SCIENCE NEWS</string>
+    <string name="tab_layout_title_name_sports_news">SPORTS NEWS</string>
+    <string name="tab_layout_title_name_technology_news">TECHNOLOGY NEWS</string>
 </resources>

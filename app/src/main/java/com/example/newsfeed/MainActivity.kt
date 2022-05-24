@@ -18,18 +18,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.viewPagerActivityMain.adapter = PagerAdapter(this)
-        binding.tabLayout.tabIconTint = null
+//        binding.tabLayout.tabIconTint = null
         binding.tabLayout.setTabTextColors(getColor(R.color.black), getColor(R.color.red))
         TabLayoutMediator(binding.tabLayout, binding.viewPagerActivityMain) { tab, pos ->
             when (pos) {
-                0 -> tab.text = "ALL NEWS"
-                1 -> tab.text = "BUSINESS NEWS"
-                2 -> tab.text = "ENTERTAINMENT NEWS"
-                3 -> tab.text = "GENERAL NEWS"
-                4 -> tab.text = "HEALTH NEWS"
-                5 -> tab.text = "SCIENCE NEWS"
-                6 -> tab.text = "SPORTS NEWS"
-                7 -> tab.text = "TECHNOLOGY NEWS"
+                0 -> tab.text = resources.getText(R.string.tab_layout_title_name_all_news)
+                1 -> tab.text = resources.getText(R.string.tab_layout_title_name_business_news)
+                2 -> tab.text = resources.getText(R.string.tab_layout_title_name_entertainment_news)
+                3 -> tab.text = resources.getText(R.string.tab_layout_title_name_general_news)
+                4 -> tab.text = resources.getText(R.string.tab_layout_title_name_health_news)
+                5 -> tab.text = resources.getText(R.string.tab_layout_title_name_science_news)
+                6 -> tab.text = resources.getText(R.string.tab_layout_title_name_sports_news)
+                7 -> tab.text = resources.getText(R.string.tab_layout_title_name_technology_news)
             }
         }.attach()
     }

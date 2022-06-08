@@ -5,18 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.newsfeed.databinding.FragmentAllNewsBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.newsfeed.R
+import com.example.newsfeed.adapters.NewsAdapter
+import com.example.newsfeed.databinding.FragmentNewsBinding
 
-class AllNewsFragment: Fragment(){
-
-    private lateinit var binding: FragmentAllNewsBinding
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentAllNewsBinding.inflate(inflater,container,false)
-        return binding.root
-    }
+class AllNewsFragment: BaseFragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        recyclerView.adapter = NewsAdapter("News")
     }
 }

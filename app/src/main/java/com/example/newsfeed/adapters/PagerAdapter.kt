@@ -20,7 +20,8 @@ class PagerAdapter(fragmentActivity: FragmentActivity): FragmentStateAdapter(fra
            4 -> HealthNewsFragment()
            5 -> ScienceNewsFragment()
            6 -> SportsNewsFragment()
-           else -> TechnologyNewsFragment()
+           7 -> TechnologyNewsFragment()
+           else -> AllNewsFragment()
        }
     }
 }

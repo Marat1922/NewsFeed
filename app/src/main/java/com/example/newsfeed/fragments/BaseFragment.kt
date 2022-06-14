@@ -11,8 +11,8 @@ import com.example.newsfeed.databinding.FragmentNewsBinding
 
 open class BaseFragment(private val text: String) : Fragment() {
 
-    lateinit var binding: FragmentNewsBinding
-    lateinit var adapter: NewsAdapter
+    private lateinit var binding: FragmentNewsBinding
+    private lateinit var adapter: NewsAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,

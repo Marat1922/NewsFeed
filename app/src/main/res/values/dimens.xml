@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_layout_height">40dp</dimen>
+    <dimen name="view_pager_margin_top">40dp</dimen>
+    <dimen name="title_news_feed_text_view">40sp</dimen>
+</resources>

@@ -10,11 +10,13 @@ class NewsAdapter(private val text: String) : RecyclerView.Adapter<NewsAdapter.V
     class VH(val binding: RecyclerViewNewsItemBinding) : RecyclerView.ViewHolder(binding.root) {
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
-        val inflater = LayoutInflater.from(parent.context)
-        val binding = RecyclerViewNewsItemBinding.inflate(inflater, parent, false)
-        return VH(binding)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = VH(
+        RecyclerViewNewsItemBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+        )
+    )
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         holder.binding.titleNewsFeedTextView.text = text

@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.viewPagerActivityMain.adapter = PagerAdapter(this)
-//        binding.tabLayout.tabIconTint = null
         binding.tabLayout.setTabTextColors(getColor(R.color.black), getColor(R.color.red))
         TabLayoutMediator(binding.tabLayout, binding.viewPagerActivityMain) { tab, pos ->
             when (pos) {
